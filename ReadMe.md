@@ -5,7 +5,8 @@
 ### 发送相关代码
 
 ```
-mail.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess | DeliveryNotificationOptions.OnFailure | DeliveryNotificationOptions.Delay;
+mail.DeliveryNotificationOptions = DeliveryNotificationOptions.OnSuccess | DeliveryNotificationOptions.OnFailure 
+    | DeliveryNotificationOptions.Delay;
 smtp.Credentials = new System.Net.NetworkCredential("", "");
 
 
@@ -32,3 +33,4 @@ for (int i = 1; i <= messageCount; i++)
 额外的话：如果不需要统计清楚是哪个账号发送的，可以在发送邮件的内容中，配置图片img src地址填入自己的后台接口（后台接口实现统计入库）完成总量统计。
 
 # 注意:如有问题，自己解决
+# 来仓库找密码的可以省省了。
